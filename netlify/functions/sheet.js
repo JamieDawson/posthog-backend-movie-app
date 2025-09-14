@@ -1,5 +1,4 @@
 // netlify/functions/sheet.js
-import fetch from "node-fetch";
 
 export async function handler(event, context) {
   try {
@@ -28,6 +27,7 @@ export async function handler(event, context) {
     };
   } catch (err) {
     console.error("Error fetching from PostHog:", err);
+
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Failed to fetch data from PostHog." }),
