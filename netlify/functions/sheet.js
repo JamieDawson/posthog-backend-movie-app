@@ -1,4 +1,4 @@
-// netlify/functions/sheet.js
+// Added this and removed server.js because this is for Netlify.
 
 export async function handler(event, context) {
   try {
